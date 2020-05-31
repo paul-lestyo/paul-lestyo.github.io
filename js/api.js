@@ -159,7 +159,7 @@ function showSavedStanding(data) {
     data.forEach(function (standing) {
         standings += `
                         <div class="card-panel center kartu">
-                            <img class="responsive-img" src="${standing.crestUrl.replace(/^http:\/\//i, 'https://')}" width="30px" alt="badge"/><br>
+                            <img class="responsive-img" src="${standing.crestUrl.replace(/^http:\/\//i, 'https://')}" width="100px" alt="badge"/><br>
                             <span class="card-title truncate">${standing.name}</span>
                             <table class="highlight">
                                 <tr>
@@ -204,7 +204,7 @@ function showTeam(data) {
             <div class='section'>
                 <h2 class='center'>${data.name}</h2>
                 <div class="col m12 s12 center">
-                    <img class="responsive-img" style="margin= 0 auto" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" width="200px" alt="badge"/>
+                    <img class="responsive-img" style="margin= 0 auto" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" width="100px" alt="badge"/>
                     <table>    
                     <tbody>
                         <tr>
