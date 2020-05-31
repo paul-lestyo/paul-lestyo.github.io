@@ -113,13 +113,13 @@ function showStanding(data) {
         standings += `
                 <div class="col m3 s12">
                         <div class="card-panel center kartu">
-                            <img class="responsive-img" src="${standing.team.crestUrl.replace(/^http:\/\//i, 'https://')}" width="30px" alt="badge"/><br>
+                            <img class="responsive-img" src="${standing.team.crestUrl.replace(/^http:\/\//i, 'https://')}" height="100px" width="100px" alt="badge"/><br>
                             <span class="card-title truncate">${standing.team.name}</span>
                             <table class="centered highlight">
                                 <tr>
-                                    <td>Win</td>
-                                    <td>Draw</td>
-                                    <td>Lose</td>
+                                    <th>Win</th>
+                                    <th>Draw</th>
+                                    <th>Lose</th>
                                 </tr>
                                 <tr>
                                     <td>${standing.won}</td>
@@ -203,11 +203,11 @@ function showTeam(data) {
         teamElement.innerHTML = `
             <div class='section'>
                 <h2 class='center'>${data.name}</h2>
-                <div class="col m12 s12">
+                <div class="col m12 s12 center">
+                    <img class="responsive-img" style="margin= 0 auto" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" width="200px" alt="badge"/>
                     <table>    
                     <tbody>
                         <tr>
-                            <td rowspan="3"><img class="responsive-img" style="margin= 0 auto" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" width="200px" alt="badge"/></td>
                             <td>Area</td>
                             <td class='right-align'>${data.area.name}</td>
                         </tr>
